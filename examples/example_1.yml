@@ -1,0 +1,16 @@
+header:
+ type: !<Enum> GameModes
+content:
+ duel: !<Mode>
+  team_size: !<U32> 1
+  duration_s: !<U32> 60
+  position: !<Float3> [1.0, 2.0, 3.0]
+  requirements:
+   - Player: !<Requirement>
+      min_battles: !<U32> 4
+   - Squad: !<Requirement>
+      min_battles: !<U32> 4
+  levels:
+   - levels/level_1
+   - levels/level_2
+   - levels/level_3
